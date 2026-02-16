@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import Hero1 from './components/heroes/Hero1';
-import Hero2 from './components/heroes/Hero2';
-import Hero3 from './components/heroes/Hero3';
-import Hero4 from './components/heroes/Hero4';
-import Hero5 from './components/heroes/Hero5';
-import Switcher from './components/ui/Switcher';
-
-const heroes = [Hero1, Hero2, Hero3, Hero4, Hero5];
+import HeroSection from './components/sections/HeroSection';
+import MethodologySection from './components/sections/MethodologySection';
 
 function App() {
-  const [active, setActive] = useState(0);
-  const Hero = heroes[active];
-
   return (
-    <>
-      <Hero key={active} />
-      <Switcher active={active} onChange={setActive} />
-    </>
+    <div className="scroll-smooth relative bg-white min-h-screen w-full overflow-x-hidden">
+      {/* Global grid across entire page */}
+      <div
+        className="fixed inset-0 pointer-events-none opacity-[0.025]"
+        style={{
+          backgroundImage:
+            'linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)',
+          backgroundSize: '60px 60px',
+        }}
+      />
+
+      <HeroSection />
+      <MethodologySection />
+    </div>
   );
 }
 
