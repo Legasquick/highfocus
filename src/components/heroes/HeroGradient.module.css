@@ -1,0 +1,188 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fdf8ee 0%, #f6edd8 30%, #f1e4c4 60%, #f7f0dc 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle floating shapes in background */
+.bgShape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.bgShape1 {
+  composes: bgShape;
+  width: 400px;
+  height: 400px;
+  background: var(--color-caramel-mid);
+  top: -120px;
+  right: -100px;
+  animation: floatSlow 12s ease-in-out infinite;
+}
+
+.bgShape2 {
+  composes: bgShape;
+  width: 300px;
+  height: 300px;
+  background: var(--color-pear-mid);
+  bottom: -80px;
+  left: -60px;
+  animation: floatSlow 10s ease-in-out infinite 2s;
+}
+
+.bgShape3 {
+  composes: bgShape;
+  width: 200px;
+  height: 200px;
+  background: var(--color-brownie-mid);
+  top: 40%;
+  left: 15%;
+  opacity: 0.08;
+  animation: floatSlow 14s ease-in-out infinite 4s;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(15px, -20px) scale(1.03); }
+  66% { transform: translate(-10px, 12px) scale(0.97); }
+}
+
+/* Focus frame watermark behind the card */
+.frameWatermark {
+  position: absolute;
+  width: clamp(400px, 60vw, 700px);
+  height: clamp(300px, 45vw, 520px);
+  opacity: 0.06;
+}
+
+.watermarkCorner {
+  stroke: var(--color-brownie);
+  stroke-width: 2;
+  fill: none;
+}
+
+/* Glassmorphism card */
+.card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  padding: clamp(2.5rem, 5vw, 4rem) clamp(2rem, 5vw, 4.5rem);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.04),
+    0 1px 3px rgba(0, 0, 0, 0.02);
+  max-width: 600px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  animation: cardIn 1.2s var(--ease-out-expo) 0.3s forwards;
+}
+
+@keyframes cardIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: var(--font-size-label);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-caramel);
+  background: rgba(242, 136, 41, 0.1);
+  padding: 0.35rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s var(--ease-out-expo) 0.8s forwards;
+}
+
+.title {
+  font-size: var(--font-size-hero);
+  font-weight: 800;
+  line-height: 0.93;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+  opacity: 0;
+  animation: fadeUp 0.8s var(--ease-out-expo) 0.6s forwards;
+}
+
+.titleLine {
+  display: block;
+}
+
+.divider {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-caramel), var(--color-pear));
+  margin: 1.5rem auto;
+  border-radius: 2px;
+  opacity: 0;
+  animation: fadeUp 0.8s var(--ease-out-expo) 0.9s forwards;
+}
+
+.subtitle {
+  font-size: var(--font-size-subtitle);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeUp 0.8s var(--ease-out-expo) 1s forwards;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.ekoniva {
+  color: var(--color-ekoniva-dark);
+  font-weight: 600;
+}
+
+.tagline {
+  margin-top: 0.8rem;
+  font-size: var(--font-size-small);
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  opacity: 0;
+  animation: fadeUp 0.8s var(--ease-out-expo) 1.1s forwards;
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Flavor dots */
+.flavors {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s var(--ease-out-expo) 1.2s forwards;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.dot:hover {
+  transform: scale(1.4);
+}
