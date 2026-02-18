@@ -27,7 +27,7 @@ export default function ATLDetailSection() {
   const active = channels.find((c) => c.id === hover);
 
   return (
-    <section ref={ref} className="relative w-full flex flex-col items-center px-6 sm:px-8 py-24 md:py-32">
+    <section ref={ref} className="relative w-full flex flex-col items-center px-6 sm:px-8 py-24 md:py-32 bg-neutral-50/40">
       <div className="relative z-10 w-full" style={{ maxWidth: '72rem' }}>
         <p className={`text-center text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-neutral-400 mb-4 ${anim('animate-fadeUp')}`}>
           Детализация

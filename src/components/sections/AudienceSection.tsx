@@ -26,17 +26,17 @@ export default function AudienceSection() {
 
         {/* Key insights */}
         <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 ${anim('animate-fadeUp delay-300')}`}>
-          <div className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-3">Решение</p>
             <h4 className="text-base sm:text-lg font-bold text-neutral-900 mb-3">Спонтанная покупка</h4>
             <p className="text-neutral-400 text-sm leading-relaxed">Потребитель сам принимает решение. Характер покупки — спонтанный или полуосознанный.</p>
           </div>
-          <div className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-3">Момент</p>
             <h4 className="text-base sm:text-lg font-bold text-neutral-900 mb-3">Короткие паузы</h4>
             <p className="text-neutral-400 text-sm leading-relaxed">Перерыв между задачами, во время учёбы или параллельно с ритуалом покупки кофе.</p>
           </div>
-          <div className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-3">Ценность</p>
             <h4 className="text-base sm:text-lg font-bold text-neutral-900 mb-3">Состояние потока</h4>
             <p className="text-neutral-400 text-sm leading-relaxed">Быстрое «включение» в рабочий процесс и достижение полной концентрации и вовлечённости.</p>

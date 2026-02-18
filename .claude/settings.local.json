@@ -7,7 +7,16 @@
       "Bash(npx tsc:*)",
       "Bash(npx vite build:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nПолная презентация High Focus с мини-игрой\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nИсправлены пути к картинкам для GitHub Pages\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(npm install:*)",
+      "Bash(npm run build)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nQR-код fixed слева на десктопах\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(node inline-assets.mjs:*)",
+      "Bash(git reset:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nВизуальные фишки: scroll bar, dividers, card-glow, градиентные фоны\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

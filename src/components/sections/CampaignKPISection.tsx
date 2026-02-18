@@ -7,7 +7,7 @@ export default function CampaignKPISection() {
   return (
     <section
       ref={ref}
-      className="relative w-full flex flex-col items-center px-6 sm:px-8 py-24 md:py-32"
+      className="relative w-full flex flex-col items-center px-6 sm:px-8 py-24 md:py-32 bg-neutral-50/40"
     >
       <div className="relative z-10 w-full" style={{ maxWidth: '72rem' }}>
         <p className={`text-center text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-neutral-400 mb-4 ${anim('animate-fadeUp')}`}>
@@ -20,7 +20,7 @@ export default function CampaignKPISection() {
 
         {/* 1. Reach */}
         <div className={`mb-12 ${anim('animate-fadeUp delay-200')}`}>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 md:p-10 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 md:p-10 transition-all duration-300 card-glow hover:-translate-y-1">
             <div className="flex items-start gap-5 md:gap-8">
               <span className="shrink-0 text-4xl sm:text-5xl font-black text-accent/20">01</span>
               <div>
@@ -38,7 +38,7 @@ export default function CampaignKPISection() {
 
         {/* 2. Engagement */}
         <div className={`mb-12 ${anim('animate-fadeUp delay-300')}`}>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 md:p-10 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 md:p-10 transition-all duration-300 card-glow hover:-translate-y-1">
             <div className="flex items-start gap-5 md:gap-8">
               <span className="shrink-0 text-4xl sm:text-5xl font-black text-accent/20">02</span>
               <div>
@@ -56,7 +56,7 @@ export default function CampaignKPISection() {
 
         {/* 3. Conversion */}
         <div className={`mb-12 ${anim('animate-fadeUp delay-400')}`}>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 md:p-10 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 md:p-10 transition-all duration-300 card-glow hover:-translate-y-1">
             <div className="flex items-start gap-5 md:gap-8">
               <span className="shrink-0 text-4xl sm:text-5xl font-black text-accent/20">03</span>
               <div>

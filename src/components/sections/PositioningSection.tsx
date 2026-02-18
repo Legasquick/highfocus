@@ -7,7 +7,7 @@ export default function PositioningSection() {
   return (
     <section
       ref={ref}
-      className="relative w-full flex flex-col items-center px-6 sm:px-8 py-24 md:py-32"
+      className="relative w-full flex flex-col items-center px-6 sm:px-8 py-24 md:py-32 bg-neutral-50/40"
     >
       <div className="relative z-10 w-full" style={{ maxWidth: '72rem' }}>
         <p className={`text-center text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-neutral-400 mb-4 ${anim('animate-fadeUp')}`}>
@@ -33,7 +33,7 @@ export default function PositioningSection() {
             { title: 'Неизвестность L-теанина', text: 'Широкая аудитория не знакома с ключевым ингредиентом продукта.' },
             { title: 'Сезонность', text: 'Круглогодичный продукт с пиком в тёплый сезон.' },
           ].map((c) => (
-            <div key={c.title} className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+            <div key={c.title} className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 card-glow hover:-translate-y-1">
               <h4 className="text-base sm:text-lg font-bold tracking-tight text-neutral-900 mb-3">{c.title}</h4>
               <p className="text-neutral-400 text-sm leading-relaxed">{c.text}</p>
             </div>
@@ -42,16 +42,16 @@ export default function PositioningSection() {
 
         {/* Price, Channels, Geography */}
         <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 ${anim('animate-fadeUp delay-500')}`}>
-          <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-2">Ценовой сегмент</p>
             <p className="text-2xl sm:text-3xl font-black text-neutral-900">199–300 ₽</p>
             <p className="text-neutral-400 text-sm mt-1">Доступный премиум</p>
           </div>
-          <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-2">Каналы</p>
             <p className="text-neutral-900 text-sm sm:text-base font-medium leading-relaxed">Кофейни, автоматы, магазины, маркетплейсы, собственная розница, сети</p>
           </div>
-          <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-2">География</p>
             <p className="text-neutral-900 text-sm sm:text-base font-medium">Россия — крупные города</p>
           </div>
@@ -59,7 +59,7 @@ export default function PositioningSection() {
 
         {/* Current vs Desired positioning */}
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 ${anim('animate-fadeUp delay-600')}`}>
-          <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg hover:-translate-y-1">
+          <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-3">Текущее позиционирование</p>
             <p className="text-neutral-900 text-sm sm:text-base leading-relaxed">Инновационный молочный напиток для концентрации энергии.</p> <br /> <b>Вызывает интерес, но не всегда понятный в категории.</b>
           </div>

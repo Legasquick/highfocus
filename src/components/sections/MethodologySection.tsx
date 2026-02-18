@@ -66,7 +66,7 @@ export default function MethodologySection() {
           {reasons.map((r, i) => (
             <div
               key={r.number}
-              className={`group rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 md:p-10 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg ${anim(`animate-fadeUp delay-${(i + 6) * 100}`)}`}
+              className={`group rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 md:p-10 transition-all duration-300 hover:border-neutral-300 hover:shadow-lg card-glow ${anim(`animate-fadeUp delay-${(i + 6) * 100}`)}`}
             >
               <div className="flex items-start gap-5 md:gap-8">
                 <span className="shrink-0 text-4xl sm:text-5xl font-black text-neutral-100 group-hover:text-accent/20 transition-colors duration-300">
