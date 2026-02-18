@@ -1,3 +1,4 @@
+import { QRCodeSVG } from 'qrcode.react';
 import HeroSection from './components/sections/HeroSection';
 import BrandSection from './components/sections/BrandSection';
 import PositioningSection from './components/sections/PositioningSection';
@@ -34,6 +35,12 @@ function App() {
       <ATLDetailSection />
       <BTLDetailSection />
       <CowGameSection />
+
+      {/* QR code — desktop only, fixed left */}
+      <div className="hidden lg:flex fixed left-6 top-1/2 -translate-y-1/2 flex-col items-center z-20">
+        <QRCodeSVG value="https://legasquick.github.io/highfocus/" size={160} />
+        <p className="text-[9px] text-neutral-400 mt-2 tracking-wider uppercase text-center leading-tight">Открой<br/>на телефоне</p>
+      </div>
     </div>
   );
 }
