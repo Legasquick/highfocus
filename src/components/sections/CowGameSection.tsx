@@ -190,7 +190,7 @@ export default function CowGameSection() {
           {/* Person in center */}
           <div className="absolute bottom-10 sm:bottom-16 left-1/2 -translate-x-1/2">
             <img
-              src="/photos/i212952_5222-10-Stefan_Durr-Courtesy_of_EkoNiva.png"
+              src={import.meta.env.BASE_URL + "photos/i212952_5222-10-Stefan_Durr-Courtesy_of_EkoNiva.png"}
               alt="Stefan"
               className={`h-14 sm:h-24 object-contain pointer-events-none ${personJumping ? 'cow-jump' : ''}`}
               draggable={false}
@@ -205,7 +205,7 @@ export default function CowGameSection() {
               style={{ left: `${cow.x}%`, transform: `translateX(-50%) ${cow.dir === 1 ? 'scaleX(-1)' : ''}` }}
             >
               <img
-                src="/photos/cow-with-ai-generated-free-png.png"
+                src={import.meta.env.BASE_URL + "photos/cow-with-ai-generated-free-png.png"}
                 alt="cow"
                 draggable={false}
                 className={`pointer-events-none w-full ${cow.jumping ? 'cow-jump' : ''}`}
