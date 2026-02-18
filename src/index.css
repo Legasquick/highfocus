@@ -157,6 +157,12 @@
   }
 }
 
+@keyframes cowJump {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-80px); }
+  100% { transform: translateY(0); }
+}
+
 @keyframes scrollPulse {
 
   0%,
@@ -172,6 +178,10 @@
 }
 
 @layer utilities {
+  .cow-jump {
+    animation: cowJump 0.6s ease both;
+  }
+
   .animate-fadeUp {
     animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
@@ -218,45 +228,56 @@
 
   .delay-100 {
     animation-delay: 100ms;
+    transition-delay: 0s;
   }
 
   .delay-200 {
     animation-delay: 200ms;
+    transition-delay: 0s;
   }
 
   .delay-300 {
     animation-delay: 300ms;
+    transition-delay: 0s;
   }
 
   .delay-400 {
     animation-delay: 400ms;
+    transition-delay: 0s;
   }
 
   .delay-500 {
     animation-delay: 500ms;
+    transition-delay: 0s;
   }
 
   .delay-600 {
     animation-delay: 600ms;
+    transition-delay: 0s;
   }
 
   .delay-700 {
     animation-delay: 700ms;
+    transition-delay: 0s;
   }
 
   .delay-800 {
     animation-delay: 800ms;
+    transition-delay: 0s;
   }
 
   .delay-1000 {
     animation-delay: 1000ms;
+    transition-delay: 0s;
   }
 
   .delay-1200 {
     animation-delay: 1200ms;
+    transition-delay: 0s;
   }
 
   .delay-1500 {
     animation-delay: 1500ms;
+    transition-delay: 0s;
   }
 }

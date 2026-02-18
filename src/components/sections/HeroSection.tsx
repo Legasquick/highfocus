@@ -43,17 +43,8 @@ export default function HeroSection() {
           high focus
         </h1>
         <p className="mt-5 text-base md:text-lg text-neutral-400 font-light tracking-wide animate-fadeUp delay-700 max-w-md mx-auto">
-          Напиток для тех, кто работает головой
+          Инновативный молочный напиток с экстрактами L-теанина и гуараны для концентрации внимания и продуктивности.
         </p>
-        <p className="mt-3 text-xs text-neutral-300 font-medium tracking-widest uppercase animate-fadeUp delay-800">
-          Гуарана + L-теанин
-        </p>
-      </div>
-
-      {/* Scroll hint */}
-      <div className="absolute bottom-10 flex flex-col items-center gap-3 animate-fadeIn delay-1500">
-        <span className="text-[10px] uppercase tracking-[0.2em] text-neutral-300">Scroll</span>
-        <div className="w-px h-8 bg-neutral-300 origin-top animate-scrollPulse" />
       </div>
     </section>
   );

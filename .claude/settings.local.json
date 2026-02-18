@@ -5,7 +5,9 @@
       "Bash(npm install)",
       "Bash(du:*)",
       "Bash(npx tsc:*)",
-      "Bash(npx vite build:*)"
+      "Bash(npx vite build:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
     ]
   }
 }
