@@ -20,9 +20,18 @@ export default function AudienceSection() {
           <span className="text-accent">и сценарий потребления</span>
         </h2>
 
-        <p className={`text-center text-neutral-500 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-16 ${anim('animate-fadeUp delay-200')}`}>
-          Мужчины и женщины 18–45 лет. Активные городские жители: студенты, офисные сотрудники, фрилансеры и представители креативных профессий.
-        </p>
+        <div className={`flex flex-wrap justify-center gap-4 mb-16 ${anim('animate-fadeUp delay-200')}`}>
+          {[
+            { label: 'Пол', value: 'Мужчины и женщины' },
+            { label: 'Возраст', value: '18–45 лет' },
+            { label: 'Род деятельности', value: 'Студенты, офисные сотрудники, фрилансеры, креативные профессии' },
+          ].map((item) => (
+            <div key={item.label} className="rounded-xl border border-neutral-200 bg-white px-5 py-4 text-center card-glow">
+              <p className="text-[10px] font-semibold tracking-[0.2em] uppercase text-accent-dim mb-1">{item.label}</p>
+              <p className="text-sm font-medium text-neutral-800">{item.value}</p>
+            </div>
+          ))}
+        </div>
 
         {/* Key insights */}
         <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 ${anim('animate-fadeUp delay-300')}`}>
