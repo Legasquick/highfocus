@@ -27,11 +27,10 @@ export default function PositioningSection() {
           Трудности позиционирования
         </p>
 
-        <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 ${anim('animate-fadeUp delay-400')}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto mb-16 ${anim('animate-fadeUp delay-400')}`}>
           {[
             { title: 'Неопределённая категория', text: 'Не энергетик, не молочный коктейль и не функциональный лимонад.' },
             { title: 'Неизвестность L-теанина', text: 'Широкая аудитория не знакома с ключевым ингредиентом продукта.' },
-            { title: 'Сезонность', text: 'Круглогодичный продукт с пиком в тёплый сезон.' },
           ].map((c) => (
             <div key={c.title} className="text-center rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 transition-all duration-300 card-glow hover:-translate-y-1">
               <h4 className="text-base sm:text-lg font-bold tracking-tight text-neutral-900 mb-3">{c.title}</h4>
@@ -41,7 +40,7 @@ export default function PositioningSection() {
         </div>
 
         {/* Price, Channels, Geography */}
-        <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 ${anim('animate-fadeUp delay-500')}`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16 ${anim('animate-fadeUp delay-500')}`}>
           <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-2">Ценовой сегмент</p>
             <p className="text-2xl sm:text-3xl font-black text-neutral-900">199–300 ₽</p>
@@ -54,6 +53,10 @@ export default function PositioningSection() {
           <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 card-glow hover:-translate-y-1">
             <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-2">География</p>
             <p className="text-neutral-900 text-sm sm:text-base font-medium">Россия — крупные города</p>
+          </div>
+          <div className="rounded-2xl border border-neutral-200 bg-neutral-50/60 p-6 sm:p-8 text-center transition-all duration-300 card-glow hover:-translate-y-1">
+            <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-accent-dim mb-2">Сезонность</p>
+            <p className="text-neutral-900 text-sm sm:text-base font-medium">Круглогодичный продукт с пиком в тёплый сезон</p>
           </div>
         </div>
 
